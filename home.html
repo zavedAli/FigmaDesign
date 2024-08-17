@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      margin: 60px;
+      align-items: center;
+    }
+    .navbar a {
+      font-family: Inter, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      color: rgb(49, 49, 49);
+      text-decoration: none;
+      padding-right: 20px;
+      transition: transform 0.2s ease, color 0.2s ease;
+    }
+    .navbar a:hover {
+      transform: scale(1.5);
+      color: #4c7c21;
+    }
+    .navbar h1 {
+      font-size: 32px;
+      font-weight: 100;
+      color: #426b1f;
+      font-family: "Times New Roman", Times, serif;
+    }
+    .navbar button {
+      all: unset;
+      font-family: Inter, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding: 12px 14px;
+      background-color: #426b1f;
+      border-radius: 9px;
+      cursor: pointer;
+    }
+
+    .navbar button:hover {
+      background-color: #365312; /* Darkens on hover */
+    }
+    header {
+      position: relative; /* Ensure the header is the positioned ancestor */
+      text-align: center; /* Center-aligns the text within the header */
+      margin: 60px;
+    }
+
+    header h1 {
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      margin: 140px 0px 30px 0px;
+      font-size: 46px;
+      font-weight: 100;
+      font-family: "Times New Roman", Times, serif;
+    }
+    header h1 span {
+      font-style: italic;
+      font-stretch: wider;
+    }
+
+    header button {
+      position: absolute;
+      margin-top: 22px;
+      left: 50%;
+      transform: translateX(-50%);
+      all: unset;
+      font-family: Inter, sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+      padding: 13px 24px;
+      background-color: #426b1f;
+      border-radius: 9px;
+      cursor: pointer;
+      display: inline-flex; /* Changed from flex to inline-flex */
+      align-items: center; /* Center-aligns SVG and text vertically */
+      gap: 8px; /* Adds space between the SVG and text */
+    }
+    header button svg {
+      width: 24px;
+      height: 24px;
+    }
+    header button:hover {
+      background-color: #365312; /* Darkens on hover */
+    }
+    .main {
+      display: flex;
+
+      justify-content: space-between; /* Centers items horizontally within .main */
+      align-items: center; /* Centers items vertically within .main */
+      width: 100%;
+      height: 100vh; /* Optional: Sets the height of .main to the full viewport height */
+    }
+    .main img {
+      border-radius: 10px;
+    }
+    .pic1,
+    .pic2 {
+      display: flex;
+      justify-content: center; /* Centers content inside pic1 and pic2 */
+      align-items: center; /* Centers content vertically inside pic1 and pic2 */
+      width: 50%;
+    }
+    .pic2 {
+      display: block;
+    }
+    .pic2 .image img {
+      width: 80%;
+    }
+    .pic2 .des {
+      font-size: 12px;
+      font-family: Inter, sans-serif;
+      margin-top: 20px;
+      width: 80%;
+      color: rgb(88, 88, 88);
+    }
+    .pic2 .des span {
+      font-weight: 600;
+    }
+    .description {
+      font-family: Inter, sans-serif;
+      padding: 20px;
+      margin: 40px 180px;
+      display: flex;
+      color: rgb(41, 41, 41);
+      line-height: 1.5em;
+    }
+    .desc1 {
+      font-size: 11px;
+
+      font-weight: 600;
+      width: 20%;
+    }
+    .desc2 {
+      font-size: 12px;
+      width: 70%;
+      text-align: justify;
+    }
+    .description p {
+      padding: 20px;
+    }
+  </style>
+  <body>
+    <nav class="navbar">
+      <h1>World Peas</h1>
+      <div class="inNav">
+        <a href="#">Shop</a>
+        <a href="#">Newstand</a>
+        <a href="#">Who are we</a>
+        <a href="#">My Profile</a>
+        <button>Basket (3)</button>
+      </div>
+    </nav>
+    <header>
+      <h1>
+        We’re <span>farmers, purveyors,</span> and <span>eaters</span> of
+        organically grown food.
+      </h1>
+      <button>
+        <svg
+          class="w-6 h-6 text-gray-800 dark:text-white"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          fill="none"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M5 4h1.5L9 16m0 0h8m-8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-8.5-3h9.25L19 7H7.312"
+          />
+        </svg>
+        Browse our Shop
+      </button>
+    </header>
+    <div class="main">
+      <div class="pic1">
+        <img width="300px" src="./img/pexels-valeriya-2110487.jpg" alt="" />
+      </div>
+
+      <div class="pic2">
+        <div class="image">
+          <img src="./img/pexels-pixabay-40720.jpg" alt="" />
+        </div>
+        <div class="des">
+          <p>
+            <span>Central California — </span>The person who grew these was
+            located in Central California and, er, hopefully very
+            well-compensated.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="description">
+      <div class="desc1">
+        <p>WHAT WE BELEIVE</p>
+      </div>
+      <div class="desc2">
+        <p>We believe in produce. Tasty produce. Produce like:</p>
+        <p>
+          Apples. Oranges. Limes. Lemons. Guavas. Carrots. Cucumbers. Jicamas.
+          Cauliflowers. Brussels sprouts. Shallots. Japanese eggplants.
+          Asparagus. Artichokes—Jerusalem artichokes, too. Radishes. Broccoli.
+          Baby broccoli. Broccolini. Bok choy. Scallions. Ginger. Cherries.
+          Raspberries. Cilantro. Parsley. Dill.
+        </p>
+
+        <p>What are we forgetting?</p>
+
+        <p>
+          Oh! Onions. Yams. Avocados. Lettuce. Arugula (to some, “rocket”).
+          Persian cucumbers, in addition to aforementioned “normal” cucumbers.
+          Artichokes. Zucchinis. Pumpkins. Squash (what some cultures call
+          pumpkins). Sweet potatoes and potato-potatoes. Jackfruit. Monk fruit.
+          Fruit of the Loom. Fruits of our labor (this website). Sorrel.
+          Pineapple. Mango. Gooseberries. Blackberries. Tomatoes. Heirloom
+          tomatoes. Beets. Chives. Corn. Endive. Escarole, which, we swear,
+          we’re vendors of organic produce, but if you asked us to describe what
+          escaroles are...
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
